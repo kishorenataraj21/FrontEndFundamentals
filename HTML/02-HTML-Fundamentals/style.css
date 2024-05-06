@@ -56,3 +56,26 @@ strong {
 em {
   font-style: italic;
 }
+
+.header-nav a {
+  text-decoration: none;
+  color: #666;
+}
+
+/* Using id selector */
+#article-img {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Internal CSS */
+
+/* Using class selector */
+.article-text {
+  margin-bottom: 15px;
+}
+
+/* Using id selector */
+#footer {
+  margin-top: 20px;
+}

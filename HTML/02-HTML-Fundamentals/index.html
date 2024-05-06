@@ -3,71 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <title>Magazine blog</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header style="background-color: #f4f4f4; padding: 20px">
+    <header class="header-nav" style="background-color: #f4f4f4; padding: 20px">
       <h1 style="color: #333">📘 The Code Magazine</h1>
 
       <nav>
-        <a href="blog.html" style="text-decoration: none; color: #666">Blog</a>
-        <a href="#" style="text-decoration: none; color: #666">Challenges</a>
-        <a href="#" style="text-decoration: none; color: #666">Flexbox</a>
-        <a href="#" style="text-decoration: none; color: #666">CSS Grid</a>
+        <a href="blog.html">Blog</a>
+        <a href="#">Challenges</a>
+        <a href="#">Flexbox</a>
+        <a href="#">CSS Grid</a>
       </nav>
     </header>
 
-    <article style="margin: 20px 0">
+    <article>
       <header>
-        <h2 style="color: #333">The Basic Language of the Web: HTML</h2>
+        <h2>The Basic Language of the Web: HTML</h2>
 
         <img
           src="img/laura-jones.jpg"
           alt="Headshot of Laura Jones"
           height="50"
           width="50"
-          style="border-radius: 50%; margin-right: 10px"
         />
 
-        <p>
-          Posted by <strong style="color: #333">Laura Jones</strong> on Monday,
-          June 21st 2027
-        </p>
+        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
 
         <img
+          id="article-img"
           src="img/post-img.jpg"
           alt="HTML code on a screen"
           width="500"
           height="200"
-          style="display: block; margin: 20px auto"
         />
       </header>
 
-      <p>
+      <p class="article-text">
         All modern websites and web applications are built using three
         <em>fundamental</em>
         technologies: HTML, CSS and JavaScript. These are the languages of the
         web.
       </p>
 
-      <p>
+      <p class="article-text">
         In this post, let's focus on HTML. We will learn what HTML is all about,
         and why you too should learn it.
       </p>
 
-      <h3 style="color: #333">What is HTML?</h3>
-      <p>
+      <h3>What is HTML?</h3>
+      <p class="article-text">
         HTML stands for <strong>H</strong>yper<strong>T</strong>ext
         <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
         language that web developers use to structure and describe the content
         of a webpage (not a programming language).
       </p>
-      <p>
+      <p class="article-text">
         HTML consists of elements that describe different types of content:
         paragraphs, links, headings, images, video, etc. Web browsers understand
         HTML and render HTML code as websites.
       </p>
-      <p>In HTML, each element is made up of 3 parts:</p>
+      <p class="article-text">In HTML, each element is made up of 3 parts:</p>
 
       <ol>
         <li>The opening tag</li>
@@ -75,19 +72,18 @@
         <li>The actual element</li>
       </ol>
 
-      <p>
+      <p class="article-text">
         You can learn more at
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/HTML"
           target="_blank"
-          style="color: #007bff; text-decoration: none"
           >MDN Web Docs</a
         >.
       </p>
 
-      <h3 style="color: #333">Why should you learn HTML?</h3>
+      <h3>Why should you learn HTML?</h3>
 
-      <p>
+      <p class="article-text">
         There are countless reasons for learning the fundamental language of the
         web. Here are 5 of them:
       </p>
@@ -103,11 +99,13 @@
         <li>To have fun 😃</li>
       </ul>
 
-      <p>Hopefully you learned something new here. See you next time!</p>
+      <p class="article-text">
+        Hopefully you learned something new here. See you next time!
+      </p>
     </article>
 
     <aside style="background-color: #f4f4f4; padding: 20px">
-      <h4 style="color: #333">Related posts</h4>
+      <h4>Related posts</h4>
 
       <ul style="list-style-type: none; padding-left: 0">
         <li style="margin-bottom: 10px">
@@ -116,25 +114,14 @@
             alt="Person programming"
             width="75"
             height="75"
-            style="border-radius: 50%; margin-right: 10px"
           />
-          <a href="#" style="text-decoration: none; color: #007bff"
-            >How to Learn Web Development</a
-          >
-          <p style="color: #666">By Jonas Schmedtmann</p>
+          <a href="#">How to Learn Web Development</a>
+          <p>By Jonas Schmedtmann</p>
         </li>
         <li style="margin-bottom: 10px">
-          <img
-            src="img/related-2.jpg"
-            alt="Lightning"
-            width="75"
-            height="75"
-            style="margin-right: 10px"
-          />
-          <a href="#" style="text-decoration: none; color: #007bff"
-            >The Unknown Powers of CSS</a
-          >
-          <p style="color: #666">By Jim Dillon</p>
+          <img src="img/related-2.jpg" alt="Lightning" width="75" height="75" />
+          <a href="#">The Unknown Powers of CSS</a>
+          <p>By Jim Dillon</p>
         </li>
         <li style="margin-bottom: 10px">
           <img
@@ -142,17 +129,15 @@
             alt="JavaScript code on a screen"
             width="75"
             height="75"
-            style="margin-right: 10px"
           />
-          <a href="#" style="text-decoration: none; color: #007bff"
-            >Why JavaScript is Awesome</a
-          >
-          <p style="color: #666">By Matilda</p>
+          <a href="#">Why JavaScript is Awesome</a>
+          <p>By Matilda</p>
         </li>
       </ul>
     </aside>
 
     <footer
+      id="footer"
       style="
         background-color: #333;
         color: #fff;
