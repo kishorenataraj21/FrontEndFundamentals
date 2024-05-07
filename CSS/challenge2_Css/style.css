@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+
+.article-header {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+  padding: 16px;
+}
+article {
+  border: 3px solid black;
+  width: 825px;
+  margin: 50px auto;
+}
+#more-info {
+  color: black;
+}
+#more-info:hover {
+  text-decoration: none;
+}
+#cartbtn {
+  background-color: black;
+  text-transform: uppercase;
+  color: antiquewhite;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border-top: 3px solid black;
+}
+#cartbtn:hover {
+  background-color: white;
+  color: black;
+  /* border: 0px; */
+}
+.freeship {
+  text-transform: uppercase;
+  color: grey;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+ul,
+ol {
+  margin-left: 50px;
+}
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+ul li {
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 20px;
+}
