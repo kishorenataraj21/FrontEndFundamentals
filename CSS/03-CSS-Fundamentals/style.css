@@ -1,4 +1,8 @@
 /* few properties */
+* {
+  margin: 0;
+  padding: 0;
+}
 h1,
 h2,
 h3,
@@ -21,16 +25,41 @@ h1 {
 }
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 p {
   font-size: 22px;
-
+  margin-bottom: 15px;
   line-height: 1.5;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
-
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+article {
+  margin-bottom: 60px;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0px;
+  width: 500px;
+}
+.post-header {
+  margin-bottom: 30px;
+}
 h4 {
   font-size: 20px;
   font-family: sans-serif;
@@ -40,6 +69,10 @@ h4 {
 li {
   font-family: sans-serif;
   font-size: 20px;
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0;
 }
 /* footer p {
   font-size: 16px;
@@ -62,14 +95,7 @@ li {
   list-style: none;
 }
 /* remeber ID SELECTOR CAN ONLY BE USED BY ONE ELEMENT IF NEED FOR MULTIPLE ELEMENTS MAKE USE OF CLASS SELECTORS */
-.main-header {
-  background-color: #f7f7f7;
-}
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-}
+
 li:first-child {
   font-weight: bold;
 }
@@ -103,6 +129,10 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+.post-img {
+  width: 100%;
+  height: auto;
 }
 /* remember LVHA => link,visited,hover,active */
 /* resolving selector conflicts */
