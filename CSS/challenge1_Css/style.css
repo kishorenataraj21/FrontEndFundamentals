@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+.article-header {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+}
+article {
+  border: 3px solid black;
+}
+#more-info {
+  color: black;
+}
+#cartbtn {
+  background-color: black;
+  text-transform: uppercase;
+  color: antiquewhite;
+}
