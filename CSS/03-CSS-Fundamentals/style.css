@@ -105,3 +105,16 @@ a:active {
   font-style: italic;
 }
 /* remember LVHA => link,visited,hover,active */
+/* resolving selector conflicts */
+/* #copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+footer p {
+  color: green;
+} */
