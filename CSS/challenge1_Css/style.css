@@ -12,8 +12,17 @@ article {
 #more-info {
   color: black;
 }
+#more-info:hover {
+  text-decoration: none;
+}
 #cartbtn {
   background-color: black;
   text-transform: uppercase;
   color: antiquewhite;
+  cursor: pointer;
+}
+#cartbtn:hover {
+  background-color: white;
+  color: black;
+  border: 0px;
 }
