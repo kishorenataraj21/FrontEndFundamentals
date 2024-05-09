@@ -9,7 +9,7 @@ body {
 #body-header {
   height: 65vh;
   opacity: 0.8;
-  background-image: url(image/macbook_mouse.jpg);
+  background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -78,12 +78,28 @@ body {
 
 section {
   width: 100%;
-  /*height: 75vh;*/
+  height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.section-heading {
+  width: auto;
+  padding: 20px 10px 10px;
+  margin: 5px auto;
+  font-weight: 400;
+}
+.section-heading span {
+  font-size: 40px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
 
+.mb75px {
+  margin-bottom: 25px;
+}
 section:nth-child(2n) {
   background-color: #9e9b9b29;
 }
@@ -104,6 +120,7 @@ section:nth-child(2n + 1) {
   height: 12rem;
   width: 12rem;
   margin: auto;
+  /* position: relative; */
   margin-top: -17vh;
 }
 
@@ -131,4 +148,26 @@ section:nth-child(2n + 1) {
 .text-highlight {
   color: #2857a4;
   font-weight: 600;
+}
+/* SKILLS section */
+.skills-display {
+  width: 70%;
+  height: 45vh;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+}
+.skillprogress {
+  background-color: lightgrey;
+  height: 1.4rem;
+  width: 7rem;
+  border-radius: 0.8rem;
+}
+.percentage1 {
+  background-color: #2857a4;
+  height: inherit;
+  width: 80%;
 }
