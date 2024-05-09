@@ -1,186 +1,283 @@
-/* few properties */
 * {
+  /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
 }
-.page-container {
-  width: 80%;
-  margin: 0 auto;
-}
+
+/* PAGE SECTIONS */
 body {
-  font-family: sans-serif;
   color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
   position: relative;
 }
+
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  display: block;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+nav {
+  font-size: 18px;
+  /* text-align: center; */
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 50px 0;
+  width: 500px;
+}
+
+/* SMALLER ELEMENTS */
 h1,
 h2,
 h3 {
   color: #1098ad;
 }
+
 h1 {
   font-size: 26px;
-
   text-transform: uppercase;
   font-style: italic;
 }
+
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
 }
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 p {
   font-size: 22px;
-  margin-bottom: 15px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
+
 ul,
 ol {
   margin-left: 50px;
   margin-bottom: 20px;
 }
-h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-.main-header {
-  background-color: #f7f7f7;
-  padding: 20px 40px;
-  margin-bottom: 60px;
-  height: 80px;
-}
-article {
-  margin-bottom: 60px;
-}
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  padding: 50px 0px;
-  width: 500px;
-}
-.post-header {
-  margin-bottom: 30px;
-}
-h4 {
-  font-size: 20px;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-}
+
 li {
-  font-family: sans-serif;
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
+
 li:last-child {
   margin-bottom: 0;
 }
+
 /* footer p {
   font-size: 16px;
 } */
+
 /* article header p {
   font-style: italic;
 } */
+
 #author {
   font-style: italic;
   font-size: 18px;
 }
+
 #copyright {
   font-size: 16px;
 }
+
 .related-author {
   font-size: 18px;
   font-weight: bold;
 }
+
+/* ul {
+  list-style: none;
+} */
+
 .related {
   list-style: none;
 }
-/* remeber ID SELECTOR CAN ONLY BE USED BY ONE ELEMENT IF NEED FOR MULTIPLE ELEMENTS MAKE USE OF CLASS SELECTORS */
+
+body {
+  /* background-color: orangered; */
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
 
 li:first-child {
   font-weight: bold;
 }
+
 li:last-child {
   font-style: italic;
 }
-/* li:nth-child(2) {
-  font-style: italic;
-} */
-li:last-child {
-  /* color: grey; */
+
+li:nth-child(even) {
+  /* color: red; */
 }
-/* below wont work if p is in article but not the last child remember this can get confusing. */
-article p:last-child {
-  color: orchid;
+
+/* Misconception: this won't work! */
+article p:first-child {
+  color: red;
 }
-/* link styling */
+
+/* Styling links */
 a:link {
   color: #1098ad;
   text-decoration: none;
 }
+
 a:visited {
+  /* color: #777; */
   color: #1098ad;
 }
+
 a:hover {
   color: orangered;
   font-weight: bold;
-  /* text-decoration: underline dotted orangered; */
   text-decoration: underline orangered;
 }
+
 a:active {
   background-color: black;
   font-style: italic;
 }
+/* LVHA */
+
 .post-img {
   width: 100%;
   height: auto;
 }
-.likebtn {
-  /* margin: 20px; */
-  padding: 10px;
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
   cursor: pointer;
+
   position: absolute;
+  /* top: 50px;
+  left: 50px; */
   bottom: 50px;
   right: 50px;
 }
-/* PSUEDO-ELEMENTS */
-/* make use of :: */
+
 h1::first-letter {
   font-style: normal;
-}
-/* the below example demonstrates how adjacent sibling selector is used make sure p is actually after h3 else it wont work since only adjacent next sibling this below will work */
-h3 + p::first-letter {
-  color: red;
+  margin-right: 5px;
 }
 
-/* Now next most important psuedo element is ::after , ::before is used to create a child as first child if given before or last child if given after to the specified element , used to create custom small hangy elements instead of using html work again can be create using the below */
-/* Notice how absolute positioning is used here since h2 acts as parent for the after psuedo element we make position of h2 relative so that after can be set positioned absolute wrt to H2 tag. */
-h2 {
-  position: relative;
-  /* background-color: orange; */
+h3 + p::first-line {
+  /* color: red; */
 }
-h2::after {
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::before {
   content: "TOP";
-  background-color: yellow;
-  font-size: 16px;
+  background-color: #ffe70e;
   color: #444;
-  position: absolute;
+  font-size: 16px;
   font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
   top: -10px;
   right: -25px;
-  padding: 5px 10px;
-  display: inline-block;
 }
-/* remember LVHA => link,visited,hover,active */
-/* resolving selector conflicts */
+
+/* Resolving conflicts */
 /* #copyright {
   color: red;
 }
+
 .copyright {
   color: blue;
 }
+
 .text {
   color: yellow;
 }
+
 footer p {
-  color: green;
+  color: green !important;
 } */
+
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
+/* FLOAT */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
