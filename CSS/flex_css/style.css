@@ -3,7 +3,7 @@
   width: 500px;
   background-color: rgb(176, 183, 183);
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   /* flex-direction: row-reverse;*/
   /* flex-wrap: wrap-reverse; */
 }
