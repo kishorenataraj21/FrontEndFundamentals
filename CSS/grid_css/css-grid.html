@@ -38,13 +38,17 @@
         background-color: #ddd;
         font-size: 30px;
         margin: 40px;
-
+        /* height: 500px; */
         /* CSS GRID */
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 4fr;
-        column-gap: 30px;
-        row-gap: 60px;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+      }
+      .el--2 {
+        grid-row: 2/3;
+        grid-column: 2/3;
       }
 
       .container--2 {
