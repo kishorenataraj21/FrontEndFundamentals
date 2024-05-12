@@ -299,13 +299,13 @@ article {
   /* width: 825px; */
   /* float: left; */
   /* margin-right: 50px; */
-  flex: 1;
+  flex: 0 0 825ox;
   margin-bottom: 0;
 }
 aside {
-  /* width: 300px; */
+  width: 500px;
   /* float: right; */
-  flex: 0 0 300px;
+  /* flex: 1; */
 }
 footer {
   clear: both;
@@ -316,29 +316,15 @@ footer {
   align-items: flex-start;
   margin-bottom: 60px;
 }
-
+.related li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
 .authdetails {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-}
-
-.related-post {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-.related-author {
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-}
-.related-link:link {
-  font-size: 17px;
-  font-weight: bold;
-  font-style: normal;
-  margin-bottom: 5px;
-  display: block;
 }
