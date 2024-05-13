@@ -25,23 +25,25 @@
         display: flex;
         align-items: center;
         gap: 24px;
-        margin: 200px auto;
+        /* margin: 200px auto; */
       }
       .pagination-container p {
         cursor: pointer;
       }
-      .pagination-container a {
+      .pagination-container .btn {
         box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
         border-radius: 50%;
-        padding: 10px;
+        height: 48px;
+        width: 48px;
         border: 1px solid #087f5b;
         display: flex;
         align-items: center;
+        justify-content: center;
       }
-      .pagination-container a:hover {
+      .pagination-container .btn:hover {
         background-color: #087f5b;
       }
-      .pagination-container a:hover .icon {
+      .pagination-container .btn:hover .icon {
         stroke: white;
       }
       .icon {
@@ -53,7 +55,7 @@
   </head>
   <body>
     <div class="pagination-container">
-      <a href="#"
+      <a href="#" class="btn"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -69,15 +71,15 @@
           />
         </svg>
       </a>
-      <p>1</p>
-      <p>2</p>
-      <p>3</p>
-      <p>4</p>
-      <p>5</p>
-      <p>6</p>
-      <p>...</p>
-      <p>23</p>
-      <a href="#"
+      <p class="page-link">1</p>
+      <p class="page-link">2</p>
+      <p class="page-link">3</p>
+      <p class="page-link">4</p>
+      <p class="page-link">5</p>
+      <p class="page-link">6</p>
+      <span class="dots">...</span>
+      <p class="page-link">23</p>
+      <a href="#" class="btn"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
